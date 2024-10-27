@@ -1,0 +1,33 @@
+
+L1_skin.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+L1_disabled
+  rotate: false
+  xy: 1, 138
+  size: 140, 140
+  split: 10, 9, 7, 5
+  pad: 10, 10, 11, 12
+  orig: 140, 140
+  offset: 0, 0
+  index: -1
+L1_up
+  rotate: false
+  xy: 143, 160
+  size: 126, 118
+  split: 4, 4, 1, 1
+  pad: 27, 25, 35, 33
+  orig: 126, 118
+  offset: 0, 0
+  index: -1
+L1_hover
+  rotate: false
+  xy: 1, 1
+  size: 130, 135
+  split: 1, 3, 2, 2
+  pad: 19, 17, 21, 34
+  orig: 130, 135
+  offset: 0, 0
+  index: -1

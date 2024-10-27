@@ -1,0 +1,23 @@
+
+title_skin.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+ANGRY BIRDS
+  rotate: false
+  xy: 1, 292
+  size: 425, 68
+  split: 0, 3, 0, 0
+  pad: 212, 212, 34, 33
+  orig: 425, 68
+  offset: 0, 0
+  index: -1
+ANGRY BIRDS (1)
+  rotate: false
+  xy: 1, 362
+  size: 430, 67
+  split: 0, 0, 0, 0
+  orig: 430, 67
+  offset: 0, 0
+  index: -1

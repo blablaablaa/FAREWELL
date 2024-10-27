@@ -1,0 +1,24 @@
+
+resume_skin.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Resume_hover.9
+  rotate: false
+  xy: 1, 240
+  size: 331, 90
+  split: 6, 5, 4, 5
+  pad: 165, 165, 45, 44
+  orig: 331, 90
+  offset: 0, 0
+  index: -1
+resume_up.9
+  rotate: false
+  xy: 1, 164
+  size: 317, 74
+  split: 0, 1, 4, 0
+  pad: 158, 158, 37, 36
+  orig: 317, 74
+  offset: 0, 0
+  index: -1

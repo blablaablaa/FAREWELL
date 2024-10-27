@@ -1,0 +1,24 @@
+
+vic_button.png
+size: 256, 256
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+def.9
+  rotate: false
+  xy: 1, 121
+  size: 240, 58
+  split: 0, 0, 0, 0
+  pad: 16, 22, 0, 0
+  orig: 240, 58
+  offset: 0, 0
+  index: -1
+vic.9
+  rotate: false
+  xy: 1, 181
+  size: 240, 58
+  split: 0, 0, 0, 0
+  pad: 19, 17, 0, 0
+  orig: 240, 58
+  offset: 0, 0
+  index: -1

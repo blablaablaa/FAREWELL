@@ -1,0 +1,42 @@
+
+continue_skin.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+continue_over.9
+  rotate: false
+  xy: 1, 419
+  size: 252, 74
+  split: 0, 1, 3, 0
+  pad: 126, 125, 37, 36
+  orig: 252, 74
+  offset: 0, 0
+  index: -1
+continue_up.9
+  rotate: false
+  xy: 1, 351
+  size: 248, 66
+  split: 2, 3, 1, 2
+  pad: 33, 31, 6, 20
+  orig: 248, 66
+  offset: 0, 0
+  index: -1
+def.9
+  rotate: false
+  xy: 1, 291
+  size: 240, 58
+  split: 0, 0, 0, 0
+  pad: 16, 22, 0, 0
+  orig: 240, 58
+  offset: 0, 0
+  index: -1
+vic.9
+  rotate: false
+  xy: 255, 435
+  size: 240, 58
+  split: 0, 0, 0, 0
+  pad: 19, 17, 0, 0
+  orig: 240, 58
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,31 @@
+
+pause_skin.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Pause_up.9
+  rotate: false
+  xy: 1, 362
+  size: 108, 118
+  split: 2, 2, 0, 4
+  pad: 54, 53, 59, 58
+  orig: 108, 118
+  offset: 0, 0
+  index: -1
+pause_hover.9
+  rotate: false
+  xy: 1, 242
+  size: 108, 118
+  split: 3, 2, 0, 5
+  pad: 54, 53, 59, 58
+  orig: 108, 118
+  offset: 0, 0
+  index: -1
+SuperFunky-lgmWw
+  rotate: false
+  xy: 1, 482
+  size: 506, 23
+  orig: 506, 23
+  offset: 0, 0
+  index: -1

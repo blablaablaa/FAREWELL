@@ -1,0 +1,8 @@
+{
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	default: {
+		up: exit_up.9
+		over: exit_hover.9
+	}
+}
+}

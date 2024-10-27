@@ -1,0 +1,22 @@
+{
+com.badlogic.gdx.graphics.Color: {
+	black: {
+		r: 0
+		g: 0
+		b: 0
+		a: 1
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	default: {
+		up: Tap to play
+		over: Tap to play (1)
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle: {
+	default: {
+		imageUp: ANGRY BIRDS
+		imageOver: ANGRY BIRDS (1)
+	}
+}
+}
