@@ -1,0 +1,24 @@
+
+new_game_skin.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+new_game.9
+  rotate: false
+  xy: 1, 241
+  size: 382, 74
+  split: 0, 0, 0, 0
+  pad: 62, 53, 13, 12
+  orig: 382, 74
+  offset: 0, 0
+  index: -1
+new_game_hover.9
+  rotate: false
+  xy: 1, 317
+  size: 409, 91
+  split: 3, 3, 2, 2
+  pad: 76, 71, 11, 25
+  orig: 409, 91
+  offset: 0, 0
+  index: -1

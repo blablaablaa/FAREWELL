@@ -1,0 +1,8 @@
+{
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	default: {
+		up: new_game.9
+		over: new_game_hover.9
+	}
+}
+}

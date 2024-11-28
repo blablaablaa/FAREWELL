@@ -1,0 +1,24 @@
+
+load_skin.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+load_hover.9
+  rotate: false
+  xy: 1, 317
+  size: 409, 91
+  split: 0, 0, 6, 3
+  pad: 75, 53, 13, 26
+  orig: 409, 91
+  offset: 0, 0
+  index: -1
+load_up.9
+  rotate: false
+  xy: 1, 242
+  size: 382, 73
+  split: 0, 0, 2, 0
+  pad: 59, 51, 9, 10
+  orig: 382, 73
+  offset: 0, 0
+  index: -1

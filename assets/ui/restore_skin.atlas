@@ -1,0 +1,24 @@
+
+restore_skin.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+restore_hover.9
+  rotate: false
+  xy: 1, 239
+  size: 331, 91
+  split: 3, 4, 6, 6
+  pad: 165, 165, 45, 45
+  orig: 331, 91
+  offset: 0, 0
+  index: -1
+restore_up.9
+  rotate: false
+  xy: 1, 163
+  size: 282, 74
+  split: 0, 0, 4, 0
+  pad: 141, 139, 37, 36
+  orig: 282, 74
+  offset: 0, 0
+  index: -1

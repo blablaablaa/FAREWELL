@@ -1,0 +1,9 @@
+{
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	default: {
+		up: L2_up.9
+		over: L2_hover.9
+		disabled: L1_disabled
+	}
+}
+}

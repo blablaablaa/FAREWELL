@@ -1,0 +1,24 @@
+
+save_skin.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+save_hover.9
+  rotate: false
+  xy: 1, 240
+  size: 331, 90
+  split: 4, 6, 5, 4
+  pad: 165, 165, 45, 44
+  orig: 331, 90
+  offset: 0, 0
+  index: -1
+save_up.9
+  rotate: false
+  xy: 1, 165
+  size: 286, 73
+  split: 0, 4, 0, 0
+  pad: 143, 142, 36, 36
+  orig: 286, 73
+  offset: 0, 0
+  index: -1
