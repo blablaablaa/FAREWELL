@@ -2,6 +2,7 @@ package io.github.blablaablaa.drop;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -10,6 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.audio.Music;
 
 public class TapToPlayScreen implements Screen {
     private COLE game;
@@ -23,12 +25,17 @@ public class TapToPlayScreen implements Screen {
     private float timeAccumulator = 0f;
     private float switchInterval = 0.5f;
 
+    public static Music backgroundMusic;
+    private Sound buttonClickSound;
+
     public TapToPlayScreen(COLE game) {
         this.game = game;
         this.batch = new SpriteBatch();
         this.viewport = new ScreenViewport();
         this.stage = new Stage(viewport);
         this.table = new Table();
+        buttonClickSound = Gdx.audio.newSound(Gdx.files.internal("Button_sound.mp3"));
+//        buttonClickSound.setPitch(1,1,0);
     }
 
     @Override
@@ -51,6 +58,11 @@ public class TapToPlayScreen implements Screen {
 
         stage.addActor(table);
         Gdx.input.setInputProcessor(stage);
+
+        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("Into_music.mp3"));
+        backgroundMusic.setLooping(true);
+        backgroundMusic.setVolume(0.1f);
+        backgroundMusic.play();
     }
 
     @Override
@@ -77,10 +89,10 @@ public class TapToPlayScreen implements Screen {
         stage.draw();
 
         if (Gdx.input.justTouched()) {
+            buttonClickSound.play(0.7f,2f,0);
             System.out.println("Touch me daddy!");
-
-//            System.out.println(Gdx.input.getX() + " " + Gdx.input.getY());
-            game.switchToLevelSelection();
+//            backgroundMusic.stop();
+            game.switchToLoadScreen();
         }
     }
 
@@ -113,5 +125,7 @@ public class TapToPlayScreen implements Screen {
         skin.dispose();
         stage.dispose();
         batch.dispose();
+        backgroundMusic.stop();
+        backgroundMusic.dispose();
     }
 }

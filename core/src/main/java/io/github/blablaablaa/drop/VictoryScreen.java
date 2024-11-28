@@ -2,6 +2,8 @@ package io.github.blablaablaa.drop;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -28,7 +30,10 @@ public class VictoryScreen implements Screen {
     private static final float WORLD_WIDTH = 800;
     private static final float WORLD_HEIGHT = 480;
 
-    public VictoryScreen(COLE game) {
+    private Music backgroundMusic;
+    private Sound buttonClickSound;
+
+    public VictoryScreen(COLE game, Screen screen) {
         this.game = game;
         batch = new SpriteBatch();
         camera = new OrthographicCamera();
@@ -39,14 +44,16 @@ public class VictoryScreen implements Screen {
         victoryImage = new Texture("victory.png");
         stage = new Stage(viewport, batch);
         Gdx.input.setInputProcessor(stage);
-
+        buttonClickSound = Gdx.audio.newSound(Gdx.files.internal("Button_sound.mp3"));
         skin = new Skin(Gdx.files.internal("ui/continue_skin.json"));
         continueButton = new Button(skin);
 
         continueButton.addListener(new ClickListener(){
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                game.setScreen(new LevelSelectionScreen(game));
+                buttonClickSound.play(0.7f, 2f, 0);
+                backgroundMusic.stop();
+                game.setScreen(screen);
             }
         });
 
@@ -59,6 +66,10 @@ public class VictoryScreen implements Screen {
 
     @Override
     public void show() {
+        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("Victory_music.mp3"));
+        backgroundMusic.setLooping(true);
+        backgroundMusic.setVolume(0.1f);
+        backgroundMusic.play();
     }
 
     @Override

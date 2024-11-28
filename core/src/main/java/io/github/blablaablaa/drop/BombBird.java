@@ -1,12 +1,15 @@
 package io.github.blablaablaa.drop;
 
-class BombBird extends Bird {
-    public BombBird(float x, float y) {
-        super("Bomb Bird", 8.0f, 3, "bomb_bird.png", x, y, 0.04f);
+import com.badlogic.gdx.physics.box2d.World;
+
+public class BombBird extends Bird {
+    public BombBird(World world, float x, float y) {
+        super(world, x, y, "bomb_bird.png", 3, 0.04f);
     }
 
     @Override
-    public void launch() {
+    public void launch(float angle, float power) {
         System.out.println("Bomb Bird launched!");
+        super.launch(angle, power);
     }
 }
